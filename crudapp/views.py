@@ -5,6 +5,7 @@ def HomePage(request):
     data = Employee.objects.all()
     return render(request, "index.html", {"data":data})
 
+## Adding new student.
 def AddNew(request):
     if (request.method == 'POST'):
         rcd = Employee()
